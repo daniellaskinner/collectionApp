@@ -20,5 +20,50 @@
             <li><a href="#form">Add a Cheese</li>
         </ul>
     </nav>
+
+    <div class="container">
+        <section class="collection" id="collection">
+            <div>
+                <div class="image"></div>
+                <h3 class="cheeseName">e.g. cheddar</h3>
+                <ul>
+                    <li class="country">e.g. england</li>
+                    <li class="wine">e.g. merlot</li>
+                    <li class="fact">e.g. funfact</li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="image"></div>
+                <h3 class="cheeseName">e.g. cheddar</h3>
+                <ul>
+                    <li class="country">e.g. england</li>
+                    <li class="wine">e.g. merlot</li>
+                    <li class="fact">e.g. funfact</li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="image"></div>
+                <h3 class="cheeseName">e.g. cheddar</h3>
+                <ul>
+                    <li class="country">e.g. england</li>
+                    <li class="wine">e.g. merlot</li>
+                    <li class="fact">e.g. funfact</li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="image"></div>
+                <h3 class="cheeseName">e.g. cheddar</h3>
+                <ul>
+                    <li class="country">e.g. england</li>
+                    <li class="wine">e.g. merlot</li>
+                    <li class="fact">e.g. funfact</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
 </body>
 </html>
