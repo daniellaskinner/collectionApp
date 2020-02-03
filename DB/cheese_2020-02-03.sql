@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.29)
 # Database: cheese
-# Generation Time: 2020-02-03 14:25:11 +0000
+# Generation Time: 2020-02-03 14:43:17 +0000
 # ************************************************************
 
 
@@ -28,16 +28,16 @@ DROP TABLE IF EXISTS `cheese`;
 CREATE TABLE `cheese` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `Name` varchar(25) DEFAULT NULL,
-  `Country of origin` varchar(20) DEFAULT NULL,
-  `Wine pairing` varchar(30) DEFAULT NULL,
-  `Fun fact` varchar(200) DEFAULT NULL,
+  `CountryOfOrigin` varchar(20) DEFAULT NULL,
+  `WinePairing` varchar(30) DEFAULT NULL,
+  `FunFact` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 LOCK TABLES `cheese` WRITE;
 /*!40000 ALTER TABLE `cheese` DISABLE KEYS */;
 
-INSERT INTO `cheese` (`id`, `Name`, `Country of origin`, `Wine pairing`, `Fun fact`)
+INSERT INTO `cheese` (`id`, `Name`, `CountryOfOrigin`, `WinePairing`, `FunFact`)
 VALUES
 	(1,'Stilton','England','Lambrusco Dolce','Must be produced in Derbyshire, Leicestershire or Nottinghamshire.');
 
