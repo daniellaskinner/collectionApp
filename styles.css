@@ -3,7 +3,40 @@
 }
 
 html {
-    font-family: 'Permanent Marker', cursive;
-    /*font-family: 'Indie Flower', cursive;*/
+    /*font-family: 'Permanent Marker', cursive;*/
+    font-family: 'Indie Flower', cursive;
+    font-weight: 900;
+    background: url("images/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*opacity: 0.5;*/
 }
 
+
+h1 {
+    text-align: center;
+}
+
+nav ul {
+    overflow: auto;
+    background-color: transparent;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+    width: 50%;
+    padding: 30px;
+    text-align: center;
+}
+
+a:hover, a:active, a:visited, a:focus {
+    text-decoration: none;
+}
+
+ul, a {
+    list-style: none;
+    text-decoration: none;
+}
