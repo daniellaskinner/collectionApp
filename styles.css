@@ -2,3 +2,8 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Permanent Marker', cursive;
+    /*font-family: 'Indie Flower', cursive;*/
+}
+
