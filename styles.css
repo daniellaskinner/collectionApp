@@ -62,13 +62,11 @@ ul, a {
 
 .collection {
     overflow: auto;
-    margin-bottom: 70px;
     text-align: center;
 }
 
-.collection div {
+.collectionItem {
     width: 33.3%;
-    height: 50%;
     float: left;
     padding: 2%;
 }
@@ -78,7 +76,3 @@ ul, a {
     border: 2px solid black;
 
 }
-
-/*.collection h3, ul {*/
-/*    margin: 5%;*/
-/*}*/
