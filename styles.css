@@ -19,12 +19,12 @@ h1 {
 }
 
 nav {
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgb(255,255,255);
     border-bottom: 2px solid rgb(0,0,0);
     border-top: 2px solid black;
     width: 100%;
     position: fixed;
-    top: 65px;
+    top: 0;
 }
 
 ul {
@@ -39,7 +39,7 @@ nav ul {
 nav li {
     float: left;
     width: 50%;
-    padding: 30px;
+    padding: 30px 30px 10px 30px;
     text-align: center;
 }
 
@@ -56,8 +56,8 @@ ul, a {
     text-align: center;
     width: 85%;
     margin: 0 auto;
-    border: 2px solid red;
-    margin-top: 120px;
+    border: 2px solid black;
+    margin-top: 190px;
 }
 
 .collection {
@@ -74,9 +74,11 @@ ul, a {
 }
 
 .collection img {
-    max-width: 100%;
+    width: 100%;
+    border: 2px solid black;
+
 }
 
-.collection h3, ul {
-    margin: 5%;
-}
+/*.collection h3, ul {*/
+/*    margin: 5%;*/
+/*}*/

@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <h1>The Cheese Collection</h1>
     <nav>
+        <h1>The Cheese Collection</h1>
         <ul>
             <li><a href="#collection">View Collection</li>
             <li><a href="#form">Add a Cheese</li>
@@ -25,7 +25,7 @@
         <section class="collection" id="collection">
             <div>
                 <div class="image"></div>
-                <h3 class="cheeseName">e.g. cheddar</h3>
+                <h3 class="cheeseName">red leicester</h3>
                 <ul>
                     <li class="country">e.g. england</li>
                     <li class="wine">e.g. merlot</li>
