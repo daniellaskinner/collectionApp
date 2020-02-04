@@ -14,10 +14,13 @@ function getAllCheeses($db) {
 function displayACheese($cheeses) {
    $cheeseItem=" ";
     foreach($cheeses as $cheese) {
-        $cheeseItem.= "<div class='collectionItem'> <h3>" . $cheese['name'] . "</h3> <ul> <li>"
-            . $cheese['countryoforigin'] . "</li> <li>"
-            . $cheese['winepairing'] . "</li> <li>"
-            . $cheese['funfact'] . "</li> </ul> </div>";
+        $cheeseItem .= "<div class='collectionItem'>" ;
+        $cheeseItem .= "<div class='image'>";
+        $cheeseItem .= "<img src='" . $cheese['imgurl'] . "'/>" . "</div>";
+        $cheeseItem .= "<h3>" . $cheese['name'] . "</h3> <ul> <li>";
+        $cheeseItem .= $cheese['countryoforigin'] . "</li> <li>";
+        $cheeseItem .= $cheese['winepairing'] . "</li> <li>";
+        $cheeseItem .= $cheese['funfact'] . "</li> </ul> </div>";
     }
     return $cheeseItem;
 };
@@ -28,13 +31,13 @@ function displayACheese($cheeses) {
 
 
 <div class="collectionItem">
-            <div class="image">
-                <img src="images/stilton.jpeg" alt="">
-            </div>
-            <h3 class=\"cheeseName\">example cheese</h3>
-            <ul>
-                <li class="country">england</li>
-                <li class="wine">merlot</li>
-                <li class="fact">funfact</li>
-            </ul>
-        </div>
+    <div class="image">
+        <img src="images/stilton.jpeg" alt="">
+    </div>
+    <h3 class=\"cheeseName\">example cheese</h3>
+    <ul>
+        <li class="country">england</li>
+        <li class="wine">merlot</li>
+        <li class="fact">funfact</li>
+    </ul>
+</div>
