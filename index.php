@@ -22,47 +22,46 @@
     </nav>
 
     <div class="container">
-        <section class="collection" id="collection">
-            <div class="collectionItem">
-                <div class="image"></div>
-                <h3 class="cheeseName">example cheese</h3>
-                <ul>
-                    <li class="country">england</li>
-                    <li class="wine">merlot</li>
-                    <li class="fact">funfact</li>
-                </ul>
-            </div>
+        <div class="collectionItem">
+            <div class="image"></div>
+            <h3 class="cheeseName">example cheese</h3>
+            <ul>
+                <li class="country">england</li>
+                <li class="wine">merlot</li>
+                <li class="fact">funfact</li>
+            </ul>
+        </div>
 
-            <div class="collectionItem">
-                <div class="image"></div>
-                <h3 class="cheeseName">example cheese</h3>
-                <ul>
-                    <li class="country">england</li>
-                    <li class="wine">merlot</li>
-                    <li class="fact">funfact</li>
-                </ul>
-            </div>
+        <div class="collectionItem">
+            <div class="image"></div>
+            <h3 class="cheeseName">example cheese</h3>
+            <ul>
+                <li class="country">england</li>
+                <li class="wine">merlot</li>
+                <li class="fact">funfact</li>
+            </ul>
+        </div>
 
-            <div class="collectionItem">
-                <div class="image"></div>
-                <h3 class="cheeseName">example cheese</h3>
-                <ul>
-                    <li class="country">england</li>
-                    <li class="wine">merlot</li>
-                    <li class="fact">funfact</li>
-                </ul>
-            </div>
+        <div class="collectionItem">
+            <div class="image"></div>
+            <h3 class="cheeseName">example cheese</h3>
+            <ul>
+                <li class="country">england</li>
+                <li class="wine">merlot</li>
+                <li class="fact">funfact</li>
+            </ul>
+        </div>
 
-            <div class="collectionItem">
-                <div class="image"></div>
-                <h3 class="cheeseName">example cheese</h3>
-                <ul>
-                    <li class="country">england</li>
-                    <li class="wine">merlot</li>
-                    <li class="fact">funfact</li>
-                </ul>
-            </div>
-        </section>
+        <div class="collectionItem">
+            <div class="image"></div>
+            <h3 class="cheeseName">example cheese</h3>
+            <ul>
+                <li class="country">england</li>
+                <li class="wine">merlot</li>
+                <li class="fact">funfact</li>
+            </ul>
+        </div>
+
     </div>
 
 </body>
