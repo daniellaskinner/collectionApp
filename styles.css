@@ -52,9 +52,10 @@ a:hover, a:active, a:visited, a:focus {
     color: rgb(0, 0, 0);
 }
 
-ul, a {
+ul, li, a, h3 {
     list-style: none;
     text-decoration: none;
+    color: rgb(0,0,0);
 }
 
 .container {
