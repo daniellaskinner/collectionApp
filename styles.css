@@ -25,6 +25,7 @@ nav {
     width: 100%;
     position: fixed;
     top: 0;
+    height: 170px;
 }
 
 ul {
@@ -45,6 +46,7 @@ nav li {
 
 nav a:hover {
     font-size: 110%;
+    color: rgb(248, 187, 95);
 }
 
 a:hover, a:active, a:visited, a:focus {
