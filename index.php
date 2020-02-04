@@ -34,15 +34,17 @@ $cheeseHtml = displayACheese($cheeses);
     </nav>
 
     <div class="container">
+        <?php echo $cheeseHtml?>
+        
         <div class="collectionItem">
             <div class="image">
                 <img src="images/brie.jpg" alt="">
             </div>
-            <h3 class="cheeseName">example cheese</h3>
+            <h3 class="cheeseName">  </h3>
             <ul>
-                <li class="country">england</li>
-                <li class="wine">merlot</li>
-                <li class="fact">funfact</li>
+                <li class="country"> </li>
+                <li class="wine"> </li>
+                <li class="fact"> </li>
             </ul>
         </div>
 
@@ -98,7 +100,3 @@ $cheeseHtml = displayACheese($cheeses);
 
 </body>
 </html>
-
-<?php
-
-echo $cheeseHtml;
