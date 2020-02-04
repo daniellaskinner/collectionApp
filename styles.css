@@ -71,10 +71,13 @@ ul, a {
     padding: 2%;
     margin: 2%;
     border-radius: 20px 20px;
+    -webkit-box-shadow: 3px 3px 5px 6px rgba(200, 149, 64, 0.6);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px rgba(200, 149, 64, 0.6);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 5px 6px rgba(200, 149, 64, 0.6);
 }
 
 .collectionItem:hover {
-    pointer: none;
+    cursor: auto;
 }
 
 .img {
