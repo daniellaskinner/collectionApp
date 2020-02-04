@@ -1,7 +1,14 @@
 <?php
 require_once 'dbConnect.php';
+require_once 'functions.php';
+$db = db();
 
-echo $db;
+$cheeses=getAllCheeses($db);
+
+$cheeseHtml = displayACheese($cheeses);
+
+
+//echo $cheeseHtml in my html code where I want to populate dynamically from db
 
 ?>
 
@@ -91,3 +98,7 @@ echo $db;
 
 </body>
 </html>
+
+<?php
+
+echo $cheeseHtml;
