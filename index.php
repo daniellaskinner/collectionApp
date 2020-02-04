@@ -1,6 +1,11 @@
 <?php
+require_once 'dbConnect.php';
+
+echo $db;
 
 ?>
+
+
 
 
 <html lang="en">
