@@ -16,14 +16,16 @@
     <nav>
         <h1>The Cheese Collection</h1>
         <ul>
-            <li><a href="#collection">View Collection</li>
+            <li><a href="#container">View Collection</li>
             <li><a href="#form">Add a Cheese</li>
         </ul>
     </nav>
 
     <div class="container">
         <div class="collectionItem">
-            <div class="image"></div>
+            <div class="image">
+                <img src="images/brie.jpg" alt="">
+            </div>
             <h3 class="cheeseName">example cheese</h3>
             <ul>
                 <li class="country">england</li>
@@ -33,7 +35,9 @@
         </div>
 
         <div class="collectionItem">
-            <div class="image"></div>
+            <div class="image">
+                <img src="images/edam.jpeg" alt="">
+            </div>
             <h3 class="cheeseName">example cheese</h3>
             <ul>
                 <li class="country">england</li>
@@ -43,7 +47,9 @@
         </div>
 
         <div class="collectionItem">
-            <div class="image"></div>
+            <div class="image">
+                <img src="images/stilton.jpeg" alt="">
+            </div>
             <h3 class="cheeseName">example cheese</h3>
             <ul>
                 <li class="country">england</li>
@@ -53,7 +59,21 @@
         </div>
 
         <div class="collectionItem">
-            <div class="image"></div>
+            <div class="image">
+                <img src="images/gouda.jpeg" alt="">
+            </div>
+            <h3 class="cheeseName">example cheese</h3>
+            <ul>
+                <li class="country">england</li>
+                <li class="wine">merlot</li>
+                <li class="fact">funfact</li>
+            </ul>
+        </div>
+
+        <div class="collectionItem">
+            <div class="image">
+                <img src="images/mozarella.jpeg" alt="">
+            </div>
             <h3 class="cheeseName">example cheese</h3>
             <ul>
                 <li class="country">england</li>

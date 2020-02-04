@@ -3,7 +3,6 @@
 }
 
 html {
-    /*font-family: 'Permanent Marker', cursive;*/
     font-family: 'Indie Flower', cursive;
     font-weight: 900;
     background: url("images/background.jpg") no-repeat center center fixed;
@@ -11,7 +10,6 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*opacity: 0.5;*/
 }
 
 h1 {
@@ -65,7 +63,6 @@ ul, a {
     margin-top: 190px;
     overflow: auto;
     text-align: center;
-    height: 100%;
 }
 
 .collectionItem {
@@ -77,9 +74,14 @@ ul, a {
     border-radius: 20px 20px;
 }
 
-.collection img {
+.img {
     width: 100%;
-    border: 2px solid black;
+    height: 30%;
+}
+
+img {
+    max-width:100%;
+    max-height:100%;
 }
 
 .collectionItem ul:hover {
