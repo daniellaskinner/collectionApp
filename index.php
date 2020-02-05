@@ -8,8 +8,6 @@ $cheeses=getAllCheeses($db);
 $cheeseHtml = displayACheese($cheeses);
 
 
-//echo $cheeseHtml in my html code where I want to populate dynamically from db
-
 ?>
 
 
