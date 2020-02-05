@@ -13,8 +13,6 @@ $cheeseHtml = displayACheese($cheeses);
 ?>
 
 
-
-
 <html lang="en">
 <head>
     <title>The Cheese Collection</title>
@@ -35,66 +33,6 @@ $cheeseHtml = displayACheese($cheeses);
 
     <div class="container">
         <?php echo $cheeseHtml?>
-
-<!--        <div class="collectionItem">-->
-<!--            <div class="image">-->
-<!--                <img src="images/brie.jpg" alt="">-->
-<!--            </div>-->
-<!--            <h3 class="cheeseName">Brie</h3>-->
-<!--            <ul>-->
-<!--                <li class="country">France</li>-->
-<!--                <li class="wine">Wine</li>-->
-<!--                <li class="fact">blahblahblahblahblah</li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!---->
-<!--        <div class="collectionItem">-->
-<!--            <div class="image">-->
-<!--                <img src="images/edam.jpeg" alt="">-->
-<!--            </div>-->
-<!--            <h3 class="cheeseName">example cheese</h3>-->
-<!--            <ul>-->
-<!--                <li class="country">england</li>-->
-<!--                <li class="wine">merlot</li>-->
-<!--                <li class="fact">funfact</li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!---->
-<!--        <div class="collectionItem">-->
-<!--            <div class="image">-->
-<!--                <img src="images/stilton.jpeg" alt="">-->
-<!--            </div>-->
-<!--            <h3 class="cheeseName">example cheese</h3>-->
-<!--            <ul>-->
-<!--                <li class="country">england</li>-->
-<!--                <li class="wine">merlot</li>-->
-<!--                <li class="fact">funfact</li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!---->
-<!--        <div class="collectionItem">-->
-<!--            <div class="image">-->
-<!--                <img src="images/gouda.jpeg" alt="">-->
-<!--            </div>-->
-<!--            <h3 class="cheeseName">example cheese</h3>-->
-<!--            <ul>-->
-<!--                <li class="country">england</li>-->
-<!--                <li class="wine">merlot</li>-->
-<!--                <li class="fact">funfact</li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!---->
-<!--        <div class="collectionItem">-->
-<!--            <div class="image">-->
-<!--                <img src="images/mozarella.jpeg" alt="">-->
-<!--            </div>-->
-<!--            <h3 class="cheeseName">example cheese</h3>-->
-<!--            <ul>-->
-<!--                <li class="country">england</li>-->
-<!--                <li class="wine">merlot</li>-->
-<!--                <li class="fact">funfact</li>-->
-<!--            </ul>-->
-<!--        </div>-->
 
     </div>
 
