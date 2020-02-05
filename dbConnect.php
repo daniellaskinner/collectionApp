@@ -1,7 +1,5 @@
 <?php
 
-//put this in my .gitignore
-
 //function to create PDO connection with fetch mode set- returns the PDO connection
 
 function db() {
