@@ -1,6 +1,10 @@
 <?php
-//function to retrieve all cheeses as an array from db (with prepare statement)
 
+/**
+ * function to retrieve all cheeses as an array from db
+ * @param PDO $db
+ * @return array
+ */
 function getAllCheeses(PDO $db):array {
     $query = $db->prepare("SELECT `id`, `name`, `countryoforigin`, `winepairing`, `funfact`, `imgurl` FROM `cheese`;");
     $query->execute();
@@ -9,8 +13,11 @@ function getAllCheeses(PDO $db):array {
 };
 
 
-//display cheese items from array if array keys exist
-
+/**
+ * return cheese items from array one by one if array keys exist for them, otherwise return an error message
+ * @param array $cheeses
+ * @return string
+ */
 function displayACheese(array $cheeses): string {
    $cheeseItem=" ";
     foreach($cheeses as $cheese) {
