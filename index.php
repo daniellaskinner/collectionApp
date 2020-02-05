@@ -15,6 +15,7 @@ $cheeseHtml = displayACheese($cheeses);
 
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="images/favicon.ico"/>
     <title>The Cheese Collection</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="normalize.css">
@@ -23,13 +24,7 @@ $cheeseHtml = displayACheese($cheeses);
 </head>
 
 <body>
-    <nav>
-        <h1>The Cheese Collection</h1>
-        <ul>
-            <li><a href="#container">View Collection</li>
-            <li><a href="#form">Add a Cheese</li>
-        </ul>
-    </nav>
+    <h1>The Cheese Collection</h1>
 
     <div class="container">
         <?php echo $cheeseHtml?>
