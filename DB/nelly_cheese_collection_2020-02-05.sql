@@ -6,8 +6,8 @@
 # https://github.com/sequelpro/sequelpro
 #
 # Host: 127.0.0.1 (MySQL 5.7.29)
-# Database: cheese
-# Generation Time: 2020-02-03 14:43:17 +0000
+# Database: nelly_cheese_collection
+# Generation Time: 2020-02-05 14:44:21 +0000
 # ************************************************************
 
 
@@ -27,19 +27,24 @@ DROP TABLE IF EXISTS `cheese`;
 
 CREATE TABLE `cheese` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `Name` varchar(25) DEFAULT NULL,
-  `CountryOfOrigin` varchar(20) DEFAULT NULL,
-  `WinePairing` varchar(30) DEFAULT NULL,
-  `FunFact` varchar(200) DEFAULT NULL,
+  `name` varchar(25) DEFAULT NULL,
+  `countryoforigin` varchar(20) DEFAULT NULL,
+  `winepairing` varchar(30) DEFAULT NULL,
+  `funfact` varchar(200) DEFAULT NULL,
+  `imgurl` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 LOCK TABLES `cheese` WRITE;
 /*!40000 ALTER TABLE `cheese` DISABLE KEYS */;
 
-INSERT INTO `cheese` (`id`, `Name`, `CountryOfOrigin`, `WinePairing`, `FunFact`)
+INSERT INTO `cheese` (`id`, `name`, `countryoforigin`, `winepairing`, `funfact`, `imgurl`)
 VALUES
-	(1,'Stilton','England','Lambrusco Dolce','Must be produced in Derbyshire, Leicestershire or Nottinghamshire.');
+	(1,'Stilton','England','Lambrusco Dolce','Must be produced in Derbyshire, Leicestershire or Nottinghamshire.','images/stilton.jpeg'),
+	(2,'Gouda','Netherlands','Malbec','One of oldest recorded cheeses in the world still made today.','images/gouda.jpeg'),
+	(3,'Mozarella','Italy','Dry Rose','Often called \"the queen of the Mediterranean cuisine\", \"white gold\" or \"the pearl of the table?.','images/mozarella.jpeg'),
+	(4,'Brie','France','Chardonnay','Takes around 5-6 weeks to mature.','images/brie.jpg'),
+	(5,'Edam','Netherlands','Syrah','Edam is traditionally sold in rounded cylinders with a pale yellow interior and a coat, or rind, of red paraffin wax.','images/edam.jpeg');
 
 /*!40000 ALTER TABLE `cheese` ENABLE KEYS */;
 UNLOCK TABLES;

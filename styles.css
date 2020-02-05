@@ -59,14 +59,14 @@ ul, li, a, h3 {
 }
 
 .container {
-    width: 85%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 5%;
     margin-top: 190px;
     text-align: center;
 }
 
 .collectionItem {
-    width: 29%;
+    width: 29.3%;
     float: left;
     background-color: rgb(249, 215, 117);
     padding: 2%;
@@ -96,5 +96,16 @@ img {
     .collectionItem {
         width: 46%;
     }
+    .container {
+        margin-left: 17px;
+    }
 }
 
+@media screen and (max-width: 400px) {
+    .collectionItem {
+        width: 250px;
+    }
+    .container {
+        margin-left: 55px;
+    }
+}
