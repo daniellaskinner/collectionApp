@@ -67,6 +67,7 @@ ul, li, a, h3 {
 
 .collectionItem {
     width: 29.3%;
+    min-height: 390px;
     float: left;
     background-color: rgb(249, 215, 117);
     padding: 2%;
@@ -79,6 +80,10 @@ ul, li, a, h3 {
 
 .collectionItem:hover {
     cursor: auto;
+}
+
+.collectionItem span {
+    text-decoration: underline;
 }
 
 .img {

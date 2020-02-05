@@ -26,10 +26,10 @@ function displayACheese(array $cheeses): string {
                 $cheeseItem .= "<div class='collectionItem'>";
                 $cheeseItem .= "<div class='image'>";
                 $cheeseItem .= "<img src='" . $cheese['imgurl'] . "'/>" . "</div>";
-                $cheeseItem .= "<h3>" . $cheese['name'] . "</h3> <ul> <li>";
-                $cheeseItem .= $cheese['countryoforigin'] . "</li> <li>";
-                $cheeseItem .= $cheese['winepairing'] . "</li> <li>";
-                $cheeseItem .= $cheese['funfact'] . "</li> </ul> </div>";
+                $cheeseItem .= "<h3> <span> Name: </span>" . $cheese['name'] . "</h3> <ul> <li>";
+                $cheeseItem .= "<span> Country of origin: </span>" . $cheese['countryoforigin'] . "</li> <li>";
+                $cheeseItem .= "<span> Wine pairing: </span>" . $cheese['winepairing'] . "</li> <li>";
+                $cheeseItem .= "<span> Fun fact: </span>" . $cheese['funfact'] . "</li> </ul> </div>";
             }
         else $cheeseItem="The array being input is not valid";
         }

@@ -8,8 +8,7 @@ class FunctionTests extends TestCase
     //testing success of function taking array and looping through array returned from db
     public function testSuccessDisplayACheese()
     {
-        $expected = " <div class='collectionItem'><div class='image'><img src='images/stilton.jpeg'/></div><h3>Stilton</h3> <ul> <li>England</li> <li>Lambrusco Dolce</li> <li>Must be produced in Derbyshire, Leicestershire or Nottinghamshire.</li> </ul> </div>";
-
+        $expected = " <div class='collectionItem'><div class='image'><img src='images/stilton.jpeg'/></div><h3> <span> Name: </span>Stilton</h3> <ul> <li><span> Country of origin: </span>England</li> <li><span> Wine pairing: </span>Lambrusco Dolce</li> <li><span> Fun fact: </span>Must be produced in Derbyshire, Leicestershire or Nottinghamshire.</li> </ul> </div>";
         $input = [
             ['id'=>"1", "name"=>"Stilton", "countryoforigin"=>"England", "winepairing"=>"Lambrusco Dolce", "funfact"=>"Must be produced in Derbyshire, Leicestershire or Nottinghamshire.", "imgurl"=>"images/stilton.jpeg"]
         ];
