@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.29)
 # Database: nelly_cheese_collection
-# Generation Time: 2020-02-05 14:44:21 +0000
+# Generation Time: 2020-02-05 15:34:07 +0000
 # ************************************************************
 
 
@@ -26,12 +26,12 @@
 DROP TABLE IF EXISTS `cheese`;
 
 CREATE TABLE `cheese` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(25) DEFAULT NULL,
-  `countryoforigin` varchar(20) DEFAULT NULL,
-  `winepairing` varchar(30) DEFAULT NULL,
-  `funfact` varchar(200) DEFAULT NULL,
-  `imgurl` varchar(50) DEFAULT NULL,
+  `id` int(255) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `countryoforigin` varchar(255) NOT NULL DEFAULT '',
+  `winepairing` varchar(255) NOT NULL DEFAULT '',
+  `funfact` varchar(255) NOT NULL DEFAULT '',
+  `imgurl` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
