@@ -6,8 +6,8 @@
 # https://github.com/sequelpro/sequelpro
 #
 # Host: 127.0.0.1 (MySQL 5.7.29)
-# Database: cheese
-# Generation Time: 2020-02-04 14:52:17 +0000
+# Database: nelly_cheese_collection
+# Generation Time: 2020-02-05 14:44:21 +0000
 # ************************************************************
 
 
@@ -40,11 +40,11 @@ LOCK TABLES `cheese` WRITE;
 
 INSERT INTO `cheese` (`id`, `name`, `countryoforigin`, `winepairing`, `funfact`, `imgurl`)
 VALUES
-	(1,'Stilton','England','Lambrusco Dolce','Must be produced in Derbyshire, Leicestershire or Nottinghamshire.','collectionApp/images/stilton.jpeg'),
-	(2,'Gouda','Netherlands','Malbec','One of oldest recorded cheeses in the world still made today.','collectionApp/images/gouda.jpeg'),
-	(3,'Mozarella','Italy','Dry Ros','Often called \"the queen of the Mediterranean cuisine\", \"white gold\" or \"the pearl of the table?.','collectionApp/images/mozarella.jpeg'),
-	(4,'Brie','France','Chardonnay','Takes around 5-6 weeks to mature.','collectionApp/images/brie.jpg'),
-	(5,'Edam','Netherlands','Syrah','Edam is traditionally sold in rounded cylinders with a pale yellow interior and a coat, or rind, of red paraffin wax.','collectionApp/images/edam.jpeg');
+	(1,'Stilton','England','Lambrusco Dolce','Must be produced in Derbyshire, Leicestershire or Nottinghamshire.','images/stilton.jpeg'),
+	(2,'Gouda','Netherlands','Malbec','One of oldest recorded cheeses in the world still made today.','images/gouda.jpeg'),
+	(3,'Mozarella','Italy','Dry Rose','Often called \"the queen of the Mediterranean cuisine\", \"white gold\" or \"the pearl of the table?.','images/mozarella.jpeg'),
+	(4,'Brie','France','Chardonnay','Takes around 5-6 weeks to mature.','images/brie.jpg'),
+	(5,'Edam','Netherlands','Syrah','Edam is traditionally sold in rounded cylinders with a pale yellow interior and a coat, or rind, of red paraffin wax.','images/edam.jpeg');
 
 /*!40000 ALTER TABLE `cheese` ENABLE KEYS */;
 UNLOCK TABLES;
