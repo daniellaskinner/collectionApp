@@ -18,7 +18,7 @@ require_once 'dbConnect.php';
 <body>
     <div class="formContainer">
         <h1>Add a cheese to the collection!</h1>
-        <form action="index.php" method="POST">
+        <form action="form.php" method="POST">
             <input type="text" name="name" placeholder="Cheese name" formmethod="POST">
             <input type="text" name="country" placeholder="Country of origin" formmethod="POST">
             <input type="text" name="wine" placeholder="Wine pairing" formmethod="POST">
@@ -34,17 +34,9 @@ require_once 'dbConnect.php';
 
 <?php
 
-//grab the data from $post superglobal array
-
-
-//call the sanitising function- unit test these
 
 //create a db connection
-
-//
-
-//create a function to add to the db params will be data to be added
-//bindParam() these bits of data
+db();
 
 
-//boot back to home page using header function
+    var_dump($_POST);

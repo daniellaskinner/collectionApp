@@ -39,5 +39,35 @@ function displayAllCheeses(array $cheeses): string {
     return $cheeseItem;
 }
 
+/**
+ * function to add user data to database
+ *
+ * @param $name
+ *
+ * @param $country
+ *
+ * @param $wine
+ *
+ * @param $fact
+ *
+ * @param $db
+ *
+ * @return mixed
+ */
+
+function insertData($name, $country, $wine, $fact, $db) {
+    $query = $db->prepare("INSERT INTO `cheese`(`name`, `country`, `wine`, `fact`)
+                            VALUES (:name, :country, :wine, :fact)");
+    $query->bindParam(':name', $name);
+    $query->bindParam(':country', $country);
+    $query->bindParam(':wine', $wine);
+    $query->bindParam(':fact', $fact);
+    $result = $query->execute();
+    return $result;
+}
+
+
 //function for validating user inputs
-//check
+function validate () {
+
+}
