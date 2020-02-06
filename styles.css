@@ -100,6 +100,10 @@ img {
     max-height:100%;
 }
 
+.container h1 {
+    text-align: center;
+}
+
 /*MEDIA QUERIES*/
 @media screen and (max-width: 650px) {
     .collectionItem {
