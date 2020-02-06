@@ -47,7 +47,7 @@ class FunctionTests extends TestCase
     //success test for checkInputStrLength function for trimming white space
     public function testSuccessCheckInputStrLengthTrimWhiteSpace()
     {
-        $expected = "cheddar";
+        $expected = true;
         $input = "     cheddar";
         $case = checkInputStrLength($input);
 
@@ -57,7 +57,7 @@ class FunctionTests extends TestCase
     //success test for checkInputStrLength function for character length being 0
     public function testSuccessCheckInputStrLengthCharLengthZero()
     {
-        $expected = 'Error, incorrect character length!';
+        $expected = false;
         $input = "";
         $case = checkInputStrLength($input);
         $this->assertEquals($expected, $case);
@@ -66,7 +66,7 @@ class FunctionTests extends TestCase
     //test failure of checkInputStrLength char length when inserting string over 255 chars length
     public function testFailureCheckInputStrLengthCharLengthOver255Chars()
     {
-        $expected = 'Error, incorrect character length!';
+        $expected = false;
         $input = "Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester 
         Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester
         Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester

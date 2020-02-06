@@ -68,13 +68,13 @@ function insertData(string $name, $country, $wine, $fact, $db): string {
  *
  * @param string $input, input from PDO $_POST element
  *
- * @return string, return the input if passed, throw error if not
+ * @return boolean, return true if passed, false if not
  */
-function checkInputStrLength(string $input): string {
+function checkInputStrLength(string $input): bool {
     if (trim(strlen($input)) > 0 && trim(strlen($input)) < 255) {
-        return trim($input);
+        return true;
     } else {
-        return 'Error, incorrect character length!';
+        return false;
     }
 }
 
