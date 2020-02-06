@@ -7,7 +7,6 @@ $cheeses = getAllCheeses($db);
 
 $cheeseHtml = displayAllCheeses($cheeses);
 
-
 ?>
 
 <html lang="en">
@@ -25,7 +24,7 @@ $cheeseHtml = displayAllCheeses($cheeses);
         <h1>The Cheese Collection</h1>
         <ul>
             <li><a href="#collection_items">Jump to top</li>
-            <li><a href="form.php">Add a Cheese</li>
+            <li><a href="form.html">Add a Cheese</li>
         </ul>
     </nav>
 
@@ -35,5 +34,6 @@ $cheeseHtml = displayAllCheeses($cheeses);
         <?php echo $cheeseHtml?>
     </div>
 
+<!--    <h5>&copy Nelly Skinner 2020. Images sourced from unsplash.</h5>-->
 </body>
 </html>

@@ -14,7 +14,6 @@ if (isset($_POST["add"])) {
     $country = $_POST['country'];
     $wine = $_POST['wine'];
     $fact = $_POST['fact'];
-//    var_dump($_POST);
 
     //create a db connection
     $db = db();
@@ -22,10 +21,6 @@ if (isset($_POST["add"])) {
     //call the insert data function, pass in the user inputs and pdo connection
     insertData($name, $country, $wine, $fact, $db);
 
+    //boot back to homepage when a cheese is input
     header('Location: index.php');
 }
-
-
-//var_dump($_POST);
-
-?>
