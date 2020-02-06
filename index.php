@@ -20,7 +20,13 @@ $cheeseHtml = displayAllCheeses($cheeses);
 </head>
 
 <body>
-    <h1>The Cheese Collection</h1>
+    <nav>
+        <h1>The Cheese Collection</h1>
+        <ul>
+            <li><a href="#container">Jump to top</li>
+            <li><a href="form.php">Add a Cheese</li>
+        </ul>
+    </nav>
 
     <div class="container">
         <?php echo $cheeseHtml?>
