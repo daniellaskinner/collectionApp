@@ -38,3 +38,6 @@ function displayAllCheeses(array $cheeses): string {
         }
     return $cheeseItem;
 }
+
+//function for validating user inputs
+//check
