@@ -1,9 +1,3 @@
-<?php
-require_once 'functions.php';
-require_once 'dbConnect.php';
-
-?>
-
 <!DOCTYPE html>
 <html lang="en-gb">
 <head>
@@ -18,7 +12,7 @@ require_once 'dbConnect.php';
 <body>
     <div class="formContainer">
         <h1>Add a cheese to the collection!</h1>
-        <form action="form.php" method="POST">
+        <form action="add.php" method="POST">
             <input type="text" name="name" placeholder="Cheese name" formmethod="POST">
             <input type="text" name="country" placeholder="Country of origin" formmethod="POST">
             <input type="text" name="wine" placeholder="Wine pairing" formmethod="POST">
@@ -30,13 +24,3 @@ require_once 'dbConnect.php';
     </div>
 </body>
 </html>
-
-
-<?php
-
-
-//create a db connection
-db();
-
-
-    var_dump($_POST);

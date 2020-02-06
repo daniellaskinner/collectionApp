@@ -56,7 +56,7 @@ function displayAllCheeses(array $cheeses): string {
  */
 
 function insertData($name, $country, $wine, $fact, $db) {
-    $query = $db->prepare("INSERT INTO `cheese`(`name`, `country`, `wine`, `fact`)
+    $query = $db->prepare("INSERT INTO `cheese`(`name`, `countryoforigin`, `winepairing`, `funfact`)
                             VALUES (:name, :country, :wine, :fact)");
     $query->bindParam(':name', $name);
     $query->bindParam(':country', $country);
@@ -68,6 +68,13 @@ function insertData($name, $country, $wine, $fact, $db) {
 
 
 //function for validating user inputs
-function validate () {
 
-}
+//function validate ($result) {
+//    if(strlen($result)>0 && <255) {
+//        trim($result);
+//        filter_var($result);
+//        return $result;
+//    } else {
+//        echo "Too many characters";
+//    }
+//}
