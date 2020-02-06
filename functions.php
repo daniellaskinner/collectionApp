@@ -72,7 +72,7 @@ function insertData($name, $country, $wine, $fact, $db) {
  */
 function checkInputStrLength(string $input): string {
     if (trim(strlen($input)) > 0 && trim(strlen($input)) < 255) {
-        return $input;
+        return trim($input);
     } else {
         return 'Error, incorrect character length!';
     }
