@@ -9,11 +9,11 @@ if (!isset($_POST['name'])) {
 }
 
 //statement to say if user clicks 'add' button in form, then run the insert data function to add to db
-if (isset($_POST["add"])) {
-    $name = $_POST['name'];
-    $country = $_POST['country'];
-    $wine = $_POST['wine'];
-    $fact = $_POST['fact'];
+if (isset ($_POST["add"])) {
+    $name = checkInputStrLength(sanitiseSpecialChars($_POST['name']));
+    $country = checkInputStrLength(sanitiseSpecialChars($_POST['country']));
+    $wine = checkInputStrLength(sanitiseSpecialChars($_POST['wine']));
+    $fact = checkInputStrLength(sanitiseSpecialChars($_POST['fact']));
 
     //create a db connection
     $db = db();

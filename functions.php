@@ -13,7 +13,6 @@ function getAllCheeses(PDO $db):array {
     return $query->fetchAll();
 };
 
-
 /**
  * return cheese items from array one by one if array keys exist for them, otherwise return an error message
  *
@@ -40,7 +39,7 @@ function displayAllCheeses(array $cheeses): string {
 }
 
 /**
- * function to add user data to database
+ * function to add user data to database and bind params
  *
  * @param $name
  *
@@ -54,7 +53,6 @@ function displayAllCheeses(array $cheeses): string {
  *
  * @return mixed
  */
-
 function insertData($name, $country, $wine, $fact, $db) {
     $query = $db->prepare("INSERT INTO `cheese`(`name`, `countryoforigin`, `winepairing`, `funfact`)
                             VALUES (:name, :country, :wine, :fact)");
@@ -62,19 +60,31 @@ function insertData($name, $country, $wine, $fact, $db) {
     $query->bindParam(':country', $country);
     $query->bindParam(':wine', $wine);
     $query->bindParam(':fact', $fact);
-    $result = $query->execute();
-    return $result;
+    return $query->execute();
 }
 
+/**
+ * Trim the string and check the string input is greater than 0 and less than 255
+ *
+ * @param string $input, input from PDO $_POST element
+ *
+ * @return string, return the input if passed, throw error if not
+ */
+function checkInputStrLength(string $input): string {
+    if (trim(strlen($input)) > 0 && trim(strlen($input)) < 255) {
+        return $input;
+    } else {
+        return 'Error, incorrect character length!';
+    }
+}
 
-//function for validating user inputs
-
-//function validate ($result) {
-//    if(strlen($result)>0 && <255) {
-//        trim($result);
-//        filter_var($result);
-//        return $result;
-//    } else {
-//        echo "Too many characters";
-//    }
-//}
+/**
+ * function to sanitise
+ *
+ * @param $input
+ *
+ * @return mixed|string
+ */
+function sanitiseSpecialChars($input) {
+    return filter_var($input, FILTER_SANITIZE_SPECIAL_CHARS);
+}
