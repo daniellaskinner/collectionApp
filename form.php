@@ -5,20 +5,26 @@ require_once 'functions.php';
 
 <!--write the form with inputs-->
 <html>
-    <head>
+<head>
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <title>Add to the Cheese Collection</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
 
-    </head>
-
-    <body>
-        <form action="index.php">
-            <input type="text" name="name" placeholder="Cheese name" formmethod="POST">
-            <input type="text" name="country" placeholder="Country of origin" formmethod="POST">
-            <input type="text" name="wine" placeholder="Wine pairing" formmethod="POST">
-            <input type="text" name="fact" placeholder="Fun fact" formmethod="POST">
-            <input type="text" name="photo" placeholder="Upload a photo" formmethod="POST">
-            <button type="submit" name="add">Add to collection</button>
-        </form>
-    </body>
+<body>
+    <h1>Add a cheese to the collection!</h1>
+    <form action="index.php">
+        <input type="text" name="name" placeholder="Cheese name" formmethod="POST">
+        <input type="text" name="country" placeholder="Country of origin" formmethod="POST">
+        <input type="text" name="wine" placeholder="Wine pairing" formmethod="POST">
+        <input type="text" name="fact" placeholder="Fun fact" formmethod="POST">
+        <input type="text" name="photo" placeholder="Upload a photo" formmethod="POST">
+        <button type="submit" name="add">Add to collection</button>
+    </form>
+</body>
 </html>
 
 

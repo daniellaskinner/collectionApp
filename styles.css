@@ -120,3 +120,11 @@ img {
 }
 
 /*FORM STYLING*/
+form {
+    text-align: center;
+}
+
+form input {
+    padding: 10px;
+    margin: 5px;
+}
