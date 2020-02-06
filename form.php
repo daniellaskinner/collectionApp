@@ -10,12 +10,12 @@ require_once 'functions.php';
     </head>
 
     <body>
-        <form>
-            <input type="text" name="name" placeholder="Cheese Name" formmethod="POST">
-            <input type="text" name="name" placeholder="Cheese Name" formmethod="POST">
-            <input type="text" name="name" placeholder="Cheese Name" formmethod="POST">
-            <input type="text" name="name" placeholder="Cheese Name" formmethod="POST">
-            <input type="text" name="name" placeholder="Cheese Name" formmethod="POST">
+        <form action="index.php">
+            <input type="text" name="name" placeholder="Cheese name" formmethod="POST">
+            <input type="text" name="country" placeholder="Country of origin" formmethod="POST">
+            <input type="text" name="wine" placeholder="Wine pairing" formmethod="POST">
+            <input type="text" name="fact" placeholder="Fun fact" formmethod="POST">
+            <input type="text" name="photo" placeholder="Upload a photo" formmethod="POST">
             <button type="submit" name="add">Add to collection</button>
         </form>
     </body>

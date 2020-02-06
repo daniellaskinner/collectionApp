@@ -58,10 +58,14 @@ ul, li, a, h3 {
     color: rgb(0,0,0);
 }
 
+.jumpTop {
+    width: 100%;
+    height: 150px;
+}
+
 .container {
     width: 90%;
     margin: 5%;
-    margin-top: 190px;
     text-align: center;
 }
 
@@ -114,3 +118,5 @@ img {
         margin-left: 55px;
     }
 }
+
+/*FORM STYLING*/
