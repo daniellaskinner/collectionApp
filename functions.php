@@ -53,7 +53,7 @@ function displayAllCheeses(array $cheeses): string {
  *
  * @return mixed
  */
-function insertData($name, $country, $wine, $fact, $db) {
+function insertData(string $name, $country, $wine, $fact, $db): string {
     $query = $db->prepare("INSERT INTO `cheese`(`name`, `countryoforigin`, `winepairing`, `funfact`)
                             VALUES (:name, :country, :wine, :fact)");
     $query->bindParam(':name', $name);

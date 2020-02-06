@@ -43,6 +43,46 @@ class FunctionTests extends TestCase
         $input = "string";
         $case = displayAllCheeses($input);
     }
+
+    //success test for checkInputStrLength function for trimming white space
+    public function testSuccessCheckInputStrLengthTrimWhiteSpace()
+    {
+        $expected = "cheddar";
+        $input = "     cheddar";
+        $case = checkInputStrLength($input);
+
+        $this->assertEquals($expected, $case);
+    }
+
+    //success test for checkInputStrLength function for character length being 0
+    public function testSuccessCheckInputStrLengthCharLengthZero()
+    {
+        $expected = 'Error, incorrect character length!';
+        $input = "";
+        $case = checkInputStrLength($input);
+        $this->assertEquals($expected, $case);
+    }
+
+    //test failure of checkInputStrLength char length when inserting string over 255 chars length
+    public function testFailureCheckInputStrLengthCharLengthOver255Chars()
+    {
+        $expected = 'Error, incorrect character length!';
+        $input = "Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester 
+        Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester
+        Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester
+        Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester
+        Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester Red Leicester";
+        $case = checkInputStrLength($input);
+        $this->assertEquals($expected, $case);
+    }
+
+    //malformed test of checkInputStrLength char length when input is a number
+    public function testCheckInputStrLengthMalformedInt()
+    {
+        $this->expectException(TypeError::class);
+        $input = [];
+        $case = checkInputStrLength($input);
+    }
 }
 
 

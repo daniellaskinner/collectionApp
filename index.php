@@ -33,7 +33,5 @@ $cheeseHtml = displayAllCheeses($cheeses);
     <div class="container">
         <?php echo $cheeseHtml?>
     </div>
-
-<!--    <h5>&copy Nelly Skinner 2020. Images sourced from unsplash.</h5>-->
 </body>
 </html>
