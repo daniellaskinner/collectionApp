@@ -1,10 +1,11 @@
 <?php
 require_once 'functions.php';
+require_once 'dbConnect.php';
 
 ?>
 
-<!--write the form with inputs-->
-<html>
+<!DOCTYPE html>
+<html lang="en-gb">
 <head>
     <link rel="shortcut icon" href="images/favicon.ico"/>
     <title>Add to the Cheese Collection</title>
@@ -16,7 +17,7 @@ require_once 'functions.php';
 
 <body>
     <h1>Add a cheese to the collection!</h1>
-    <form action="index.php">
+    <form action="index.php" method="POST">
         <input type="text" name="name" placeholder="Cheese name" formmethod="POST">
         <input type="text" name="country" placeholder="Country of origin" formmethod="POST">
         <input type="text" name="wine" placeholder="Wine pairing" formmethod="POST">
@@ -24,14 +25,16 @@ require_once 'functions.php';
         <input type="text" name="photo" placeholder="Upload a photo" formmethod="POST">
         <button type="submit" name="add">Add to collection</button>
     </form>
+
+    <button class="backToIndex"><a href="index.php" >Back to collection page</button>
 </body>
 </html>
 
 
 <?php
-//submit the form data to another php file (action= add.php, method=post)
 
 //grab the data from $post superglobal array
+
 
 //call the sanitising function- unit test these
 
