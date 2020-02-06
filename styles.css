@@ -120,13 +120,20 @@ img {
 }
 
 /*FORM PAGE STYLING*/
+.formContainer {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
 form {
     text-align: center;
 }
 
 form input {
-    padding: 10px;
-    margin: 5px;
+    padding: 5px;
+    margin: 10px;
+    width: 100%;
 }
 
 form button:hover {
@@ -135,8 +142,8 @@ form button:hover {
 }
 
 .backToIndex {
-    padding: 10px;
-    margin: 5px;
+    padding: 5px;
+    margin: 20px 5px 5px 5px;
     align-content: center;
     align-items: center;
 

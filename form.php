@@ -16,17 +16,18 @@ require_once 'dbConnect.php';
 </head>
 
 <body>
-    <h1>Add a cheese to the collection!</h1>
-    <form action="index.php" method="POST">
-        <input type="text" name="name" placeholder="Cheese name" formmethod="POST">
-        <input type="text" name="country" placeholder="Country of origin" formmethod="POST">
-        <input type="text" name="wine" placeholder="Wine pairing" formmethod="POST">
-        <input type="text" name="fact" placeholder="Fun fact" formmethod="POST">
-        <input type="text" name="photo" placeholder="Upload a photo" formmethod="POST">
-        <button type="submit" name="add">Add to collection</button>
-    </form>
+    <div class="formContainer">
+        <h1>Add a cheese to the collection!</h1>
+        <form action="index.php" method="POST">
+            <input type="text" name="name" placeholder="Cheese name" formmethod="POST">
+            <input type="text" name="country" placeholder="Country of origin" formmethod="POST">
+            <input type="text" name="wine" placeholder="Wine pairing" formmethod="POST">
+            <input type="text" name="fact" placeholder="Fun fact" formmethod="POST">
+            <button type="submit" name="add">Add to collection</button>
+        </form>
 
-    <button class="backToIndex"><a href="index.php" >Back to collection page</button>
+        <button class="backToIndex"><a href="index.php" >Back to collection page</button>
+    </div>
 </body>
 </html>
 
