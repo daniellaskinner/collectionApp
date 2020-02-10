@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.29)
 # Database: nelly_cheese_collection
-# Generation Time: 2020-02-05 16:06:20 +0000
+# Generation Time: 2020-02-06 14:12:03 +0000
 # ************************************************************
 
 
@@ -31,7 +31,7 @@ CREATE TABLE `cheese` (
   `countryoforigin` varchar(255) NOT NULL DEFAULT '',
   `winepairing` varchar(255) NOT NULL DEFAULT '',
   `funfact` varchar(255) NOT NULL DEFAULT '',
-  `imgurl` varchar(255) NOT NULL DEFAULT '',
+  `imgurl` varchar(255) NOT NULL DEFAULT 'images/cheeseDefault.jpeg',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 

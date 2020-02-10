@@ -13,7 +13,6 @@ function getAllCheeses(PDO $db):array {
     return $query->fetchAll();
 };
 
-
 /**
  * return cheese items from array one by one if array keys exist for them, otherwise return an error message
  *
@@ -37,4 +36,55 @@ function displayAllCheeses(array $cheeses): string {
         else $cheeseItem = "The array being input is not valid";
         }
     return $cheeseItem;
+}
+
+/**
+ * function to add user data to database and bind params
+ *
+ * @param $name
+ *
+ * @param $country
+ *
+ * @param $wine
+ *
+ * @param $fact
+ *
+ * @param $db
+ *
+ * @return mixed
+ */
+function insertData(string $name, $country, $wine, $fact, $db): string {
+    $query = $db->prepare("INSERT INTO `cheese`(`name`, `countryoforigin`, `winepairing`, `funfact`)
+                            VALUES (:name, :country, :wine, :fact)");
+    $query->bindParam(':name', $name);
+    $query->bindParam(':country', $country);
+    $query->bindParam(':wine', $wine);
+    $query->bindParam(':fact', $fact);
+    return $query->execute();
+}
+
+/**
+ * Trim the string and check the string input is greater than 0 and less than 255
+ *
+ * @param string $input, input from PDO $_POST element
+ *
+ * @return boolean, return true if passed, false if not
+ */
+function checkInputStrLength(string $input): bool {
+    if (trim(strlen($input)) > 0 && trim(strlen($input)) < 255) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+/**
+ * function to sanitise
+ *
+ * @param $input
+ *
+ * @return mixed|string
+ */
+function sanitiseSpecialChars($input) {
+    return filter_var($input, FILTER_SANITIZE_SPECIAL_CHARS);
 }
