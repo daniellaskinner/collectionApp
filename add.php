@@ -8,6 +8,7 @@ if (!isset($_POST['name'])) {
     header('Location: index.php');
 }
 
+$cheeseId = checkInputStrLength(sanitiseSpecialChars($_POST['id']));
 $name = checkInputStrLength(sanitiseSpecialChars($_POST['name']));
 $country = checkInputStrLength(sanitiseSpecialChars($_POST['country']));
 $wine = checkInputStrLength(sanitiseSpecialChars($_POST['wine']));

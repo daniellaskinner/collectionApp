@@ -8,7 +8,9 @@
  * @return array
  */
 function getAllCheeses(PDO $db):array {
-    $query = $db->prepare("SELECT `id`, `name`, `countryoforigin`, `winepairing`, `funfact`, `imgurl` FROM `cheese`;");
+    $query = $db->prepare("SELECT `id`, `name`, `countryoforigin`, `winepairing`, `funfact`, `imgurl` 
+                                    FROM `cheese`
+                                    WHERE `deleted` = 0;");
     $query->execute();
     return $query->fetchAll();
 };
@@ -87,4 +89,10 @@ function checkInputStrLength(string $input): bool {
  */
 function sanitiseSpecialChars($input) {
     return filter_var($input, FILTER_SANITIZE_SPECIAL_CHARS);
+}
+
+function deleteCheese($id, $db) {
+    $query = $db->prepare('UPDATE `cheese` SET `deleted` = 1 WHERE `id` = :id');
+    $query->bindParam(':id', $id);
+    return $query->execute();
 }

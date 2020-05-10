@@ -1,6 +1,8 @@
 <?php
 require_once 'dbConnect.php';
 require_once 'functions.php';
+require_once 'delete.php';
+
 $db = db();
 
 $cheeses = getAllCheeses($db);
